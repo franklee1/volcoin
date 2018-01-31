@@ -51,7 +51,7 @@ class CMainParams : public CChainParams
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xb5;
+        pchMessageStart[0] = 0x15;
         pchMessageStart[1] = 0x3c;
         pchMessageStart[2] = 0xd6;
         pchMessageStart[3] = 0xe2;
@@ -88,8 +88,8 @@ class CMainParams : public CChainParams
         // printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         // printf("merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x0000045ef9bb43e57c01904ebfaf9f8d1509ba3a73184c3ba8bda4e92c3d7074"));
+        assert(genesis.hashMerkleRoot == uint256("0xbb9955723adb7f7b9813febf31e88344de667da12a65ed9ec5b5caa4ddd5b454"));
 
         vSeeds.push_back(CDNSSeedData("n0", "104.207.129.122")); //Pool Nosekefik Official
         vSeeds.push_back(CDNSSeedData("n1", "45.77.78.72")); //Explorer
