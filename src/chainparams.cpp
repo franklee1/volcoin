@@ -80,21 +80,20 @@ class CMainParams : public CChainParams
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1516126706;
+        genesis.nTime = 1517386609;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 181419;
+        genesis.nNonce = 382862;
 
         hashGenesisBlock = genesis.GetHash();
         // printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         // printf("merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(hashGenesisBlock == uint256("0x4ae3e3e2e971937c34a0baca8b2b7afd8ec395df1654011aa72095f816190d6e"));
-        assert(genesis.hashMerkleRoot == uint256("0xeb470313056b87ab23006ece1349e11717367b32ce99379307ffbc6b5290e447"));
+        assert(hashGenesisBlock == uint256("0x"));
+        assert(genesis.hashMerkleRoot == uint256("0x"));
 
-        vSeeds.push_back(CDNSSeedData("n0", "147.135.130.119")); //Pool Nosekefik Official
-        vSeeds.push_back(CDNSSeedData("n1", "173.249.7.89")); //Explorer
-        vSeeds.push_back(CDNSSeedData("n2", "5.189.152.63"));
-        vSeeds.push_back(CDNSSeedData("n3", "35.229.90.33"));
+        vSeeds.push_back(CDNSSeedData("n0", "104.207.129.122")); //Pool Nosekefik Official
+        vSeeds.push_back(CDNSSeedData("n1", "45.77.78.72")); //Explorer
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 133);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 5);
